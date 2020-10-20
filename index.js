@@ -7,6 +7,7 @@ server.use(express.json()) // this allows us to show json elements in the browse
 server.use('/', (req, res) => {
     res.status(200)
     .json({message: 'Hello World'})
+    // This will print Hello World when we browse to the server port listed below
 })
 
 const PORT = 5000
